@@ -17,7 +17,7 @@ class MainPage:
         self.join_conference_btn.click()
 
     @allure.step("Кликаем на кнопку создания встречи")
-    def click_on_join_conference_btn(self):
+    def click_on_create_conference_btn(self):
         self.create_conference_btn.click()
 
     @allure.step("Проверяем отображение кнопки главного экрана")
