@@ -13,7 +13,7 @@ class ConferencePage:
 
     @allure.step("Проверяем наличие сообщения о некорректном номере")
     def should_have_invalid_message(self):
-        self.invalid_session.should(have.text("Такой встречи не существует, но вы можете создать новую"))
+        self.invalid_session.should(have.text("Такой встречи не существует,\nно вы можете создать новую"))
 
     @allure.step("Проверяем попадание на встречу")
     def should_open_conference_window(self):

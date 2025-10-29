@@ -6,7 +6,7 @@ class JoinConferencePage:
 
     def __init__(self):
         self.conference_id_input = browser.element('.Textinput-Control')
-        self.join_conference_btn = browser.element('[data-test-id="button"]')
+        self.join_conference_btn = browser.element('[class*="connectButton"]')
         self.close_join_conference_btn = browser.element('[aria-label="Закрыть окно"]')
 
     @allure.step("Открываем страницу подключения к встрече")
