@@ -5,7 +5,7 @@ from selene import browser, be
 class MainPage:
 
     def __init__(self):
-        self.join_conference_btn = browser.element('[data-test-id="button"]')
+        self.join_conference_btn = browser.element('[class*="ConnectCallButton"]')
         self.create_conference_btn = browser.element('[data-test-id="create-call-button"]')
 
     @allure.step("Открываем главную страницу")
